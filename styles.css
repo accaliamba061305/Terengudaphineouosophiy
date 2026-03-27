@@ -1,3 +1,6 @@
-body {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiU4len9NZ5LSXpSa-OzqMWePjxPGXbd6XBQ&s);
+h1 {
+    text-align: center;
+    padding: 40px;
+    padding-color: #008B8B;
+    text-font: sans-serif, time-new-roman;
 }
