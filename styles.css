@@ -1,113 +1,166 @@
-/* ====================== TERGU ENCYCLOPEDIA - MAX BEAUTY VERSION ====================== */
+/* ====================== TERGU ENCYCLOPEDIA - PHIÊN BẢN BẠN THÍCH (NÂNG CẤP) ====================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap');
 
 :root {
-    --accent: #b794f4;
-    --teal-glow: #67e8ce;
-    --gold: #fde047;
-    --surface: rgba(10, 10, 30, 0.88);
+    --teal: #008B8B;
+    --teal-light: #00b3b3;
+    --accent: #a78bfa;
+    --accent-hover: #c4b5fd;
+    --gold: #facc15;
+    --surface: rgba(15, 25, 35, 0.92);
+    --text: #e8f0ff;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: #f0f0ff;
-    line-height: 1.8;
-    background: 
-        linear-gradient(rgba(3, 3, 18, 0.82), rgba(8, 8, 35, 0.88)),
-        url('https://images.unsplash.com/photo-1462331940025-5ec7f9c9a9d4?w=2000&auto=format&fit=crop&q=85') center/cover no-repeat fixed;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--text);
+    line-height: 1.75;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.78)),
+        url('https://plus.unsplash.com/premium_photo-1673473619570-94b3ac8c4aed?w=2000&auto=format&fit=crop&q=85');
     min-height: 100vh;
 }
 
-/* Header siêu ấn tượng */
+/* Header - Giữ màu teal bạn thích */
 header {
     text-align: center;
-    padding: 120px 20px 80px;
-    background: linear-gradient(180deg, rgba(0, 80, 100, 0.95), rgba(0, 40, 60, 0.8));
-    position: relative;
-}
-
-header::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at center, rgba(183, 148, 244, 0.25) 0%, transparent 70%);
-    pointer-events: none;
+    padding: 90px 20px 60px;
+    background-color: var(--teal);
+    border-bottom: 4px solid var(--teal-light);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 4.8rem;
-    font-weight: 900;
-    letter-spacing: 8px;
-    color: #fff;
-    text-shadow: 
-        0 0 20px #b794f4,
-        0 0 40px #67e8ce,
-        0 0 80px rgba(183, 148, 244, 0.6);
-    margin-bottom: 20px;
+    font-size: 4.1rem;
+    letter-spacing: 6px;
+    color: #ffffff;
+    text-shadow: 0 0 25px rgba(255,255,255,0.5);
+    margin-bottom: 15px;
 }
 
 header p {
-    font-size: 1.5rem;
-    color: #c0e0ff;
-    max-width: 780px;
+    font-size: 1.4rem;
+    color: #c0f0f0;
+    max-width: 720px;
     margin: 0 auto;
-    font-weight: 300;
 }
 
-/* Navigation glow mạnh hơn */
+/* Navigation */
 nav.banner {
-    background: rgba(0, 70, 80, 0.85);
-    backdrop-filter: blur(15px);
-    padding: 28px 0;
-    border-bottom: 1px solid rgba(183, 148, 244, 0.4);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 26px 0;
+    background-color: rgba(0, 139, 139, 0.88);
+    backdrop-filter: blur(10px);
 }
 
 nav.banner a {
-    padding: 16px 36px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.18rem;
+    font-weight: 500;
+    padding: 14px 34px;
     border-radius: 50px;
-    font-weight: 600;
-    transition: all 0.5s ease;
-}
-
-nav.banner a:hover {
-    background: rgba(183, 148, 244, 0.3);
-    box-shadow: 0 0 25px rgba(183, 148, 244, 0.6);
-    transform: scale(1.08) translateY(-3px);
-    color: #fff;
-}
-
-/* Section glassmorphism + glow */
-section {
-    background: var(--surface);
-    padding: 55px 50px;
-    border-radius: 24px;
-    border: 1px solid rgba(183, 148, 244, 0.3);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border: 1px solid transparent;
     transition: all 0.4s ease;
 }
 
+nav.banner a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 139, 139, 0.4);
+}
+
+/* Main Content */
+main {
+    max-width: 1120px;
+    margin: 55px auto;
+    padding: 0 25px;
+}
+
+section {
+    background-color: var(--surface);
+    padding: 48px 42px;
+    border-radius: 18px;
+    border: 1px solid rgba(0, 179, 179, 0.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+    transition: all 0.3s ease;
+    margin-bottom: 65px;
+}
+
 section:hover {
-    transform: translateY(-12px);
-    border-color: #b794f4;
-    box-shadow: 0 30px 60px rgba(183, 148, 244, 0.35);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(167, 139, 250, 0.25);
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8rem;
-    color: #b794f4;
-    border-bottom: 4px solid #67e8ce;
-    padding-bottom: 16px;
+    font-size: 2.55rem;
+    color: #00e0e0;
+    margin-bottom: 25px;
+    border-bottom: 3px solid var(--teal-light);
+    padding-bottom: 14px;
+    display: inline-block;
 }
 
-/* Các phần còn lại giữ giống trước nhưng tinh chỉnh nhẹ */
-p { font-size: 1.12rem; color: #d8e8ff; }
-ul li a { color: #b794f4; }
-ul li a:hover { color: #c4b5fd; padding-left: 8px; }
+h3 {
+    font-size: 1.6rem;
+    color: var(--gold);
+    margin: 30px 0 16px;
+}
 
+p {
+    font-size: 1.1rem;
+    color: #d0e0f0;
+    margin-bottom: 19px;
+}
+
+ul li a {
+    color: var(--accent);
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: var(--accent-hover);
+    padding-left: 5px;
+}
+
+/* Hr */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0, 179, 179, 0.4), transparent);
+    margin: 55px 0;
+}
+
+/* Footer */
 footer {
-    padding: 60px 20px 45px;
-    color: #99aacc;
+    text-align: center;
+    padding: 45px 20px 35px;
+    color: #99aabb;
+    border-top: 1px solid rgba(0, 179, 179, 0.3);
+}
+
+footer a {
+    color: #00e0e0;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 { font-size: 3.2rem; letter-spacing: 3px; }
+    nav.banner a { padding: 12px 26px; font-size: 1.05rem; }
+    section { padding: 35px 25px; }
 }
